@@ -196,7 +196,7 @@ article{display: flex;
     background-color: rgb(43, 90, 104);
     text-align: center;
     margin: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 40px;
     padding: 30px;
     overflow: scroll;
@@ -229,7 +229,7 @@ article{display: flex;
 }
 #totalResult{
     margin: 10px;
-    margin-left: 80px;
+    margin-left: 70px;
     background-color: rgb(43, 90, 104); 
     height: 50px;
     width: 280px;
