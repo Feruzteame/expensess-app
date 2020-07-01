@@ -122,7 +122,7 @@ h1{
 }
 @media only screen and (max-width: 600px) {
     body{
-    background-color: rgb(43, 90, 104);
+    background-color: white;
     font-size: 15px;
     padding: 10px;
 }
@@ -191,7 +191,7 @@ article{display: flex;
     text-align: center;
 }
 #display1, #display2{
-    width: 150px;
+    width: 130px;
     height: 100px;
     background-color: rgb(43, 90, 104);
     text-align: center;
@@ -239,7 +239,7 @@ article{display: flex;
 footer{
     text-align: center;
     font-size: 70%;
-    color: white;
+    color: black;
     margin-top: 20px;}
     
 }
