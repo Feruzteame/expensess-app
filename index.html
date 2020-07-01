@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <!--link scripts-->
+    <script  src="./scripts/income.js"></script>
+    <script  src="./scripts/outcome.js"></script>
+    <script  src="./scripts/remender.js"></script>
+    <script  src="./scripts/reset.js"></script>
+    <script src="./scripts/like.js"></script>
+</head>
+<body>
+    <!--heading-->
+    <h1>Get monthly <span>save</span></h1>
+    
+    <section>
+       <!--user input-->
+       <div id="UI">
+          <button id="button1">+</button>
+          <input onclick="this.value= ''" id="input" type="text" placeholder="Write here">
+          <button id="button2">-</button>
+       </div>
+       <article>
+          <!--income display-->
+          <div id="income">
+              <div id="display1"></div>
+              <button id="button3">Total income</button>
+             <div id="result1"></div>
+          </div>
+          <!--outcome display-->
+          <div id="outcome">
+              <div id="display2"></div>
+              <button id="button4">Total outcome</button>
+              <div id="result2"></div>
+          </div>
+       </article>
+       <!--remender display-->
+       <div id="remender">
+           <button id="button5">Save</button> 
+           <button id="reset">Reset</button>
+           <div id="totalResult"></div>
+        </div>
+    </section>
+    <footer> Copyright &copy; 2020 Feruz Teame. ALL RIGHTS RESERVED </footer>   
+
+    <!--link listener script-->
+    <script src="./scripts/listener.js"></script>   
+</body>
+</html>
