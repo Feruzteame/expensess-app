@@ -124,7 +124,7 @@ h1{
     body{
     background-color: white;
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
 }
 section{
     display: flex;
@@ -141,7 +141,7 @@ article{display: flex;
     margin: 5px;
     margin-bottom: -28px;
     text-align: center;
-    background-color: white;
+    background-color: white
 }
 #income{
     width:227px;
@@ -169,16 +169,16 @@ article{display: flex;
    background-color:green;
    height: 30px;
    width: 30px;
-   margin-top: 30px;
-   margin-right: 10px;
+   margin-top: 20px;
+   margin-right: 50px;
    font-size: 20px;
 }
 #button2{
     background-color: red;
     height: 30px;
     width: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
     font-size: 20px;
 }
 #input{
@@ -191,14 +191,14 @@ article{display: flex;
     text-align: center;
 }
 #display1, #display2{
-    width: 130px;
+    width: 200px;
     height: 100px;
     background-color: rgb(43, 90, 104);
     text-align: center;
-    margin: 10px;
-    margin-left: 15px;
-    margin-top: 40px;
-    padding: 30px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
     overflow: scroll;
 }
 #result1, #result2{
@@ -212,24 +212,26 @@ article{display: flex;
  #button4{
     height: 40px;
     width: 100px;
+    margin-top: 20px;
     background-color: red;
 }
 #button3{
     height: 40px;
     width: 100px;
+    margin-top: 20px;
     background-color: green;
 }
 #button5, #reset{
      height: 40px;
-     width: 150px;
+     width: 100px;
      background-color: skyblue;
      margin: 20px;
-     margin-top: 30px;
+     margin-top: -150px;
      
 }
 #totalResult{
     margin: 10px;
-    margin-left: 70px;
+    margin-left: 10px;
     background-color: rgb(43, 90, 104); 
     height: 50px;
     width: 280px;
