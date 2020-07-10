@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/b3478a18b6.js" crossorigin="anonymous"></script>
     <!--link css-->
     <link rel="stylesheet" href="style.css">
     <!--link scripts-->
@@ -14,38 +15,53 @@
     <script src="./scripts/like.js"></script>
 </head>
 <body>
-    <!--heading-->
-    <h1>Get monthly <span>save</span></h1>
-    
+    <header>
+        <div class="logo"><i class="fas fa-money-bill-wave">SAVE</i></div>
+        <!--heading-->
+        <div class="save-heading"><h1>get monthly <span>save</span></h1></div>
+        <div class="user"><i class="fas fa-user"></i></div>
+    </header>
     <section>
        <!--user input-->
-       <div id="UI">
-          <button id="button1">+</button>
-          <input onclick="this.value= ''" id="input" type="text" placeholder="Write here">
-          <button id="button2">-</button>
-       </div>
-       <article>
-          <!--income display-->
-          <div id="income">
-              <div id="display1"></div>
-              <button id="button3">Total income</button>
-             <div id="result1"></div>
-          </div>
-          <!--outcome display-->
-          <div id="outcome">
-              <div id="display2"></div>
-              <button id="button4">Total outcome</button>
-              <div id="result2"></div>
-          </div>
-       </article>
-       <!--remender display-->
-       <div id="remender">
-           <button id="button5">Save</button> 
-           <button id="reset">Reset</button>
-           <div id="totalResult"></div>
+        <div class="left">
+            <div id="UI">
+                <button id="button1">+</button>
+                <input onclick="this.value= ''" id="input" type="text" placeholder="Enter here">
+                <button id="button2">-</button>
+            </div>
+            <article>
+                <!--income display-->
+                <div id="income">
+                    <div id="display1"></div>
+                </div>
+                <!--outcome display-->
+                <div id="outcome">
+                    <div id="display2"></div>
+                </div>
+            </article>
+        </div>
+        <div class="right">
+            <div class="button-result">
+                <div class="income-display">
+                    <button id="button3">Income</button>
+                    <div id="result1"></div>
+                </div>
+                <div class="outcome-display">
+                    <button id="button4">Outcome</button>
+                    <div id="result2"></div>
+                </div>
+            </div>
+            <!--remender display-->
+            <div id="remender">
+                <div class="save-reset-button">
+                    <button id="button5">Save</button> 
+                    <button id="reset">Reset</button>
+                </div>
+                <div id="totalResult"></div>
+            </div>
         </div>
     </section>
-    <footer> Copyright &copy; 2020 Feruz Teame. ALL RIGHTS RESERVED </footer>   
+    <footer><span id="copy-right">Copyright &copy; 2020 Feruz Teame. ALL RIGHTS RESERVED </span></footer>   
 
     <!--link listener script-->
     <script src="./scripts/listener.js"></script>   
