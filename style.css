@@ -1,245 +1,203 @@
-body{
-    background-color: rgb(43, 90, 104);
-    font-size: 20px;
-    padding: 10px;
+* {
+    margin: 0;
+    padding: 0;
 }
-section{
+body {
+    background-image: url(save.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    background-color: rgba(0, 128, 128, 0.705);
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 5px 10px;
 }
-
-span{ color: white;}
-article{display: flex;
-         padding: 5px;
-        }
-#UI{height: 100px;
-    width: 700px;
-    margin: 5px;
-    margin-bottom: -28px;
-    text-align: center;
-    background-color: black;
-}
-#income{
-    width:350px;
-    height: 400px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-#outcome{
-    width:350px;   
-    height: 400px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-#remender{height: 200px;
-         margin: 0px;
-         text-align: center;
-         margin-top: -5px;
-         width: 700px;
-         background-color: black;
-         color: white;
-}
-#button1{
-   background-color:green;
-   height: 30px;
-   width: 30px;
-   margin-top: 30px;
-   margin-right: 10px;
-   font-size: 20px;
-}
-#button2{
-    background-color: red;
-    height: 30px;
-    width: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
-    font-size: 20px;
-}
-#input{
-    height: 30px;
-    width: 200px;
-    margin-top: 30px;
-}
-#input::placeholder{
+.save-heading {
+    width: 70%;
     text-align: center;
 }
-#display1, #display2{
-    width: 230px;
-    height: 100px;
-    background-color: rgb(43, 90, 104);
-    text-align: center;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 40px;
-    padding: 30px;
-    overflow: scroll;
+.save-heading h1 {
+    color: #cad9dd;
+    text-transform: capitalize;
 }
-#result1, #result2{
-    margin: 30px;
-    background-color:  rgb(43, 90, 104); 
-    height: 30px;
-    width: 270px;
-    padding: 10px;
-    text-align: center;
+.save-heading span{
+    color: #fdcb6e;
+    text-transform: uppercase;
 }
- #button4{
-    height: 40px;
-    width: 100px;
-    background-color: red;
+.fa-money-bill-wave {
+    color: #fdcb6e;
+    font-size: 30px;
+    cursor: pointer;
 }
-#button3{
-    height: 40px;
-    width: 100px;
-    background-color: green;
+.fa-user {
+    font-size: 30px;
+    color: rgb(231, 213, 213);
+    position: absolute;
+    right: 20px;
+    cursor: pointer;;
 }
-#button5, #reset{
-     height: 40px;
-     width: 150px;
-     background-color: white;
-     margin: 20px;
-     margin-top: 30px;
-}
-#totalResult{
-    margin: 10px;
-    margin-left: 150px;
-    background-color: rgb(43, 90, 104); 
-    height: 50px;
-    width: 370px;
-    text-align: center;
-    padding: 10px;
-    }
-footer{
-    text-align: center;
-    font-size: 70%;
-    color: white;
-    margin-top: 20px;
-}
-h1{
-    text-align: center;
-}
-@media only screen and (max-width: 600px) {
-    body{
-    background-color: white;
-    font-size: 15px;
-    padding: 10px;
-}
-section{
+section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 100px auto;
+    background-color: #0985e380;
+    width: 70%;
+    height: max-content;
+    box-shadow: 2px 2px 5px 3px gray;
+    border-radius: 10px 0;  
+    padding: 50px 20px;
 }
-
-span{ color: skyblue;}
-article{display: flex;
-         padding: 5px;
-        }
-#UI{height: 100px;
-    width: 500px;
-    margin: 5px;
-    margin-bottom: -28px;
+.left {
+    width: 60%;
+}
+#UI, article {
+    display: flex;
+    width: 100%;
     text-align: center;
-    background-color: white;
 }
-#income{
-    width:227px;
-    height: 400px;
-    text-align: center;
-    background-color: white;
-    color: white
+button, input {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: unset;
+    border-radius: 2px;
 }
-#outcome{
-    width:227px;   
-    height: 400px;
-    text-align: center;
-    background-color: white;
-    color: white;
+#button1, #button2 {
+    width: 10%;
 }
-#remender{height: 200px;
-         margin: 0px;
-         text-align: center;
-         margin-top: -5px;
-          width: 454px;
-          background-color: white;
-         color: white;
+#button1  {
+    background-color: #27ae60;
 }
-#button1{
-   background-color:green;
-   height: 30px;
-   width: 30px;
-   margin-top: 30px;
-   margin-right: 10px;
-   font-size: 20px;
+#button2 {
+    background-color: #d63031;
 }
-#button2{
-    background-color: red;
-    height: 30px;
-    width: 30px;
-    margin-top: 30px;
-    margin-left: 10px;
+#input {
+    width: 75%;
+    margin: auto;
+}
+article > div {
+    width: 50%;
+    margin: 20px 0;
+}
+#display1, #display2 {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(226, 223, 223, 0.815);
+    border: 1px solid gray;
+    overflow: hidden;
+    overflow: scroll;
+    margin: auto;
+    text-align: left;
     font-size: 20px;
 }
-#input{
-    height: 30px;
-    width: 200px;
-    margin-top: 30px;
-
+.right {
+    width: 35%;
 }
-#input::placeholder{
+.button-result {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.income-display, .outcome-display {
+    width: 50%;
+    margin: auto;
     text-align: center;
 }
-#display1, #display2{
-    width: 130px;
-    height: 100px;
-    background-color: rgb(43, 90, 104);
-    text-align: center;
-    margin: 10px;
-    margin-left: 15px;
-    margin-top: 40px;
-    padding: 30px;
+#result1, #result2 {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    background-color: rgba(226, 223, 223, 0.815);
+    border: 1px solid gray;
+    overflow: hidden;
     overflow: scroll;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 17px;
 }
-#result1, #result2{
-    margin: 30px;
-    background-color:  rgb(43, 90, 104); 
+#button3 {
+    width: 97%;
+    background-color: #27ae60;
+}
+#button4 {
+    width: 97%;
+    background-color: #d63031
+}
+.save-reset-button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#button5, #reset {
+    width: 48%;
+}
+#button5 {
+    background-color: #27ae60;
+}
+#reset {
+    background-color: #d63031;
+}
+.remender {
+    width: 100%;
+}
+#totalResult {
+    width: 100%;
     height: 50px;
-    width: 150px;
-    padding: 10px;
+    margin: 20px auto;
+    background-color: rgba(226, 223, 223, 0.795);
     text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    overflow: scroll;
+    padding-top: 5px;
 }
- #button4{
-    height: 40px;
-    width: 100px;
-    background-color: red;
+#display1, #result1 {
+    border-radius: 5px 0 0 5px;
+    border-left: unset;
+    border-top: unset;
+    border-bottom: unset;
 }
-#button3{
-    height: 40px;
-    width: 100px;
-    background-color: green;
+#display2, #result2 {
+    border-radius: 0 5px 5px 0;
+    border-right: unset;
+    border-top: unset;
+    border-bottom: unset;
 }
-#button5, #reset{
-     height: 40px;
-     width: 150px;
-     background-color: skyblue;
-     margin: 20px;
-     margin-top: 30px;
-     
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #636e72e5;
+    text-align: center;  
 }
-#totalResult{
-    margin: 10px;
-    margin-left: 70px;
-    background-color: rgb(43, 90, 104); 
-    height: 50px;
-    width: 280px;
-    text-align: center;
-    padding: 10px;
+#copy-right {
+    position: relative;
+    top: 30px;
+    color: rgb(231, 213, 213);
+}
+@media screen and (max-width: 800px) {
+    section {
+        display: block;
+        width: 90%;
+        padding: 30px 20px;
+        margin: 50px 0;
     }
-footer{
-    text-align: center;
-    font-size: 70%;
-    color: black;
-    margin-top: 20px;}
-    
+    .right {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    #input {
+        width: 80%;
+    }
+    #button3, #button4 {
+        width: 70%;
+        margin: auto;
+    }
+    #button5, #reset {
+        width: 38%;
+    }
+
 }
