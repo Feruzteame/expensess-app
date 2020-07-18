@@ -1,37 +1,61 @@
 // create an empty array
 let array1 = [];
+const display3 = [];
+
 
 function put1(){
-    const input1 = document.getElementById("input");
-    const input = document.getElementById("input").value;
-    const display2 = document.getElementById("display2");
     
-     // avoid input 0, " ", string
-    if(input < 0 || input === " " ){
-       alert("put valid number");
-       input1.value = " "
-       return false;
-        }
-    if(isNaN(input)){
-       alert("Put valid number");
-       input1.value = " "
-       return false;
-    }
- // put the input value in the empty array
-    array1.push(input);
-    var value1 = " ";
-    // use for loop to display each and every input        
-    for(i = 0; i < array1.length; i++){
-        value1 = value1 + array1[i] + "</br>";
-    }  
-     // display the array   
-    display2.innerHTML = value1;
-    input1.value = " "
+    const display2 = document.getElementById("display2");
+    const input1 = document.getElementById("input");
+    const input3 = document.getElementById("input2");
+    const input = document.getElementById("input").value;
+    const input2 = document.getElementById("input2").value;
+  
+    const object = {
+               kind: input,
+               money: input2
   }
-   // function which used to add the array
-  function  add1(){
-      const result2 = document.getElementById("result2");
-      let sum1 = array1.reduce(function(a, b){
-              return +a + +b;}, 0);
-      result2.innerHTML = "Total Outcome $" + sum1;
+    const arr = Object.values(object)
+            .join("\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0");  
+      
+    display3.push(arr);
+
+    if(isNaN(input2) || input2 === " "  ){
+          alert("Put valid number ")
+          input3.value = " "
+          input1.value= " "
+          window.location = document.URL
+          return false;
+   }
+
+    if(input < 0 ||input1 === " "){
+          alert("Put valid number")
+          input3.value = " "
+          input1.value= " "
+          window.location=document.URL
+          return false;
+   }
+
+
+    var value = " "; // use for loop to display each and every input
+  
+    for(i = 0; i < display3.length; i++){
+       value = value + display3[i] + "</br>";
     }
+    display2.innerHTML = value;
+    input1.value = " "
+    input3.value = " "
+
+    const values = object.money;
+    array1.push(values);
+}
+
+
+
+function add1(){
+       const result2 = document.getElementById("result2");
+       let result = array1.reduce(function(a,b){ // to add the array
+       return +a + +b
+   }, 0)
+     result2.innerHTML = "Total Income $" + result;
+}  
