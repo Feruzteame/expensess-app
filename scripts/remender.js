@@ -15,12 +15,17 @@ function remender(){
    // return diffrent sentences 
     if(save > 0){
         totalResult.innerHTML = "You can saved $" + save + " or " + percentage+'%' + " of your income"; 
+        totalResult.style.backgroundColor = "green";
+        totalResult.style.color = "white";
+
         
         }else if(save === 0){
          totalResult.innerHTML = "You can not save ! you left $" + save + " or " + percentage + '%' + " of your income"; 
         }else{
        let save1 = -1 * save;
        totalResult.innerHTML = "Ooops you loan $" + save1; 
+       totalResult.style.backgroundColor = "red";
+        totalResult.style.color = "white";
        }
 
 }

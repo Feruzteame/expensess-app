@@ -21,20 +21,20 @@ function put1(){
     display3.push(arr);
 
     if(isNaN(input2) || input2 === " "  ){
-          alert("Put valid number ")
+          alert(`first please put only alphabet \n (name of income or outcome of your money) \n second put value of your money`)
           input3.value = " "
           input1.value= " "
           window.location = document.URL
           return false;
    }
 
-    if(input < 0 ||input1 === " "){
+   /* if(input < 0 ||input1 === " "){
           alert("Put valid number")
           input3.value = " "
           input1.value= " "
           window.location=document.URL
           return false;
-   }
+   }*/
 
 
     var value = " "; // use for loop to display each and every input

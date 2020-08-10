@@ -2,9 +2,7 @@
 let array = [];
 const display = [];
 
-
-
-   function put(){
+function put(){
        const input1 = document.getElementById("input");
        const input3 = document.getElementById("input2");
        const input = document.getElementById("input").value;
@@ -20,23 +18,21 @@ const display = [];
       display.push(arr);
 
      if(isNaN(input2) || input2 === " " ){
-              alert("Put valid number");
+              alert(`first please put only alphabet \n (name of income or outcome of your money) \n second put value of your money`);
               input3.value = " "
               input1.value= " "
               window.location = document.URL
               return false;
        }
 
-      if(input < 0 || input1 === " " ){
-             alert("Put valid number ");
+      /*if(input < 0 || input1 === " " ){
+             alert("p");
              input3.value = " "
              input1.value= " "
              window.location = document.URL
             return false;
-     }
-
-
-      var value = " "; // use for loop to display each and every input
+     }*/
+    var value = " "; // use for loop to display each and every input
          
       for(i = 0; i < display.length; i++){
           value = value + display[i] + "</br>";
