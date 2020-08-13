@@ -12,7 +12,7 @@ function remender(){
     }, 0);
    // subtract total outcome from total income
     let save  =  addArray - addArray1 ;
-    let percentage = (save/ addArray) * 100;
+    let percentage = (Math.floor((save/ addArray)* 100));
    // return diffrent sentences 
     if(save > 0){
         totalResult.innerHTML = `You can saved $${save} ` 
