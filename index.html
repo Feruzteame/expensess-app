@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="expenses app">
-    <meta name="description" content="Basic expenses app calculator">
+    <meta charset="UTF-8">
+    <meta name="description" content="simple EXpensess app">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expenses App</title>
-    <script src="https://kit.fontawesome.com/b3478a18b6.js" crossorigin="anonymous"></script>
+    <title>EXpensess app</title>
     <!--link css-->
     <link rel="stylesheet" href="style.css">
     <!--link scripts-->
@@ -16,63 +15,41 @@
     
 </head>
 <body>
+    <!--heading-->
     <header>
-        <div class="logo"><i class="fas fa-money-bill-wave">SAVE</i></div>
-        <!--heading-->
-        <div class="save-heading"><h1>get monthly <span>save</span></h1></div>
-       
+      <h1>Get monthly <span>Expenses</span></h1>
+      <button id="reset">Reset</button>
     </header>
+    
     <section>
        <!--user input-->
-        <div class="left">
-            <div id="UI">
-                <button id="button1">+</button>
-                <input onclick="this.value= ''" id="input" type="text" placeholder="Kind of your income or outcome"><br>
-                <input onclick="this.value= ''" id="input2" type="text" placeholder="Put the value here">
-                <button id="button2">-</button>
-            </div>
-            <article>
-                <!--income display-->
-                <div id="income">
-                    <div id="display1"></div>
-                </div>
-                <!--outcome display-->
-                
-                <div id="outcome">
-                    <div id="display2"></div>
-                </div>
-            </article>
+       <div id="UI">
+          <button id="button1">+</button>
+          <input  id="input" type="text" placeholder="Write here">
+          <button id="button2">-</button>
+       </div>
+       <article>
+          <!--income display-->
+          <div id="income">
+              <div id="display1"></div>
+              <button id="button3">Total income</button>
+             <div id="result1"></div>
+          </div>
+          <!--outcome display-->
+          <div id="outcome">
+              <div id="display2"></div>
+              <button id="button4">Total outcome</button>
+              <div id="result2"></div>
+          </div>
+       </article>
+       <!--remender display-->
+       <div id="remender">
+           <button id="button5">Save</button> <br>
+          <div id="totalResult"></div>
+          <div id="circle"></div>
         </div>
-       
-        <div class="right">
-            <div class="button-result">
-                <div class="income-display">
-                    <button id="button3">Income</button>
-                    <div id="result1"></div>
-                </div>
-                <div class="outcome-display">
-                    <button id="button4">Outcome</button>
-                    <div id="result2"></div>
-                </div>
-            </div>
-           
-            <!--remender display-->
-            
-            <div id="remender">
-                <div class="save-reset-button">
-                    <button id="button5">Save</button> 
-                    <button id="reset">Reset</button>
-                </div>
-                <div id="totalResult"></div>
-            </div>
-            <div id="circle">
-                 %
-            </div>
-        </div>
-       
     </section>
-    
-    <footer><span id="copy-right">Copyright &copy; 2020 Feruz Teame. ALL RIGHTS RESERVED </span></footer>   
+    <footer> Copyright &copy; 2020 ExpensesApp. ALL RIGHTS RESERVED </footer>   
 
     <!--link listener script-->
     <script src="./scripts/listener.js"></script>   

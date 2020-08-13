@@ -2,7 +2,6 @@
 function remender(){
     const totalResult = document.getElementById("totalResult");
     const percent = document.getElementById("circle");
-
     // add the income array
     let addArray = array.reduce(function(a, b){
        return +a + +b;
@@ -18,20 +17,18 @@ function remender(){
     if(save > 0){
         totalResult.innerHTML = `You can saved $${save} ` 
         percent.style.backgroundColor = "green";
-        percent.innerHTML = ` ${percentage} % of your income"`;
-       
-
+        percent.innerHTML = ` ${percentage} % of your income`;
         
-        }else if(save === 0){
+    }else if(save === 0){
          totalResult.innerHTML = `You can not save ! you left $" ${save}`;
          percent.style.backgroundColor = "orange";
-        percent.innerHTML = ` ${percentage} % WARNING`;
-         
+         percent.innerHTML = ` ${percentage} % WARNING`;
+        
         }else{
-       let save1 = -1 * save;
-       totalResult.innerHTML = "Ooops you loan $" + save1; 
-       percent.style.backgroundColor = "red";
-        percent.innerHTML = `WARNING`;
+          let save1 = -1 * save;
+          totalResult.innerHTML = `Ooops you loan $${save1}`; 
+          percent.style.backgroundColor = "red";
+          percent.innerHTML = `WARNING`;
         
        }
 
