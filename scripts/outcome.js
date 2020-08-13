@@ -57,5 +57,5 @@ function add1(){
        let result = array1.reduce(function(a,b){ // to add the array
        return +a + +b
    }, 0)
-     result2.innerHTML = "Total Income $" + result;
+     result2.innerHTML = "Total Outcome $" + result;
 }  

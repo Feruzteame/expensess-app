@@ -1,6 +1,8 @@
 
 function remender(){
     const totalResult = document.getElementById("totalResult");
+    const percent = document.getElementById("circle");
+
     // add the income array
     let addArray = array.reduce(function(a, b){
        return +a + +b;
@@ -14,18 +16,23 @@ function remender(){
     let percentage = (save/ addArray) * 100;
    // return diffrent sentences 
     if(save > 0){
-        totalResult.innerHTML = "You can saved $" + save + " or " + percentage+'%' + " of your income"; 
-        totalResult.style.backgroundColor = "green";
-        totalResult.style.color = "white";
+        totalResult.innerHTML = `You can saved $${save} ` 
+        percent.style.backgroundColor = "green";
+        percent.innerHTML = ` ${percentage} % of your income"`;
+       
 
         
         }else if(save === 0){
-         totalResult.innerHTML = "You can not save ! you left $" + save + " or " + percentage + '%' + " of your income"; 
+         totalResult.innerHTML = `You can not save ! you left $" ${save}`;
+         percent.style.backgroundColor = "orange";
+        percent.innerHTML = ` ${percentage} % WARNING`;
+         
         }else{
        let save1 = -1 * save;
        totalResult.innerHTML = "Ooops you loan $" + save1; 
-       totalResult.style.backgroundColor = "red";
-        totalResult.style.color = "white";
+       percent.style.backgroundColor = "red";
+        percent.innerHTML = `WARNING`;
+        
        }
 
 }
