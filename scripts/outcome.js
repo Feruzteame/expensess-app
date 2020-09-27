@@ -28,11 +28,3 @@ function put1(){
     display2.innerHTML = value1;
     input1.value = " "
   }
-   // function which used to add the array
-  function  add1(){
-      const result2 = document.getElementById("result2");
-      let sum1 = array1.reduce(function(a, b){
-              return +a + +b;}, 0);
-      result2.innerHTML = "Total Outcome $" + sum1;
-      
-    }

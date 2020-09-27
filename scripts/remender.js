@@ -2,17 +2,22 @@
 function remender(){
     const totalResult = document.getElementById("totalResult");
     const percent = document.getElementById("circle");
-    // add the income array
-    let addArray = array.reduce(function(a, b){
-       return +a + +b;
-   }, 0);
-   // add the outcome
-   let addArray1 = array1.reduce(function(a, b){
-    return +a + +b;
-    }, 0);
+    const result1 = document.getElementById("result1");
+    const result2 = document.getElementById("result2");
+    
+    // add income
+         let sum = array.reduce(function(a, b){
+           return +a + +b;
+           }, 0);
+          result1.innerHTML = "Total income $" + sum;
+    // add outcome
+      let sum1 = array1.reduce(function(a, b){
+              return +a + +b;}, 0);
+      result2.innerHTML = "Total Outcome $" + sum1;
+    
    // subtract total outcome from total income
-    let save  =  addArray - addArray1 ;
-    let percentage = (Math.floor((save/ addArray)* 100));
+    let save  =  sum - sum1 ;
+    let percentage = (Math.floor((save/ sum)* 100));
    // return diffrent sentences 
     if(save > 0){
         totalResult.innerHTML = `You can saved $${save} ` 
@@ -28,7 +33,7 @@ function remender(){
           let save1 = -1 * save;
           totalResult.innerHTML = `Ooops you loan $${save1}`; 
           percent.style.backgroundColor = "red";
-          percent.innerHTML = `WARNING`;
+          percent.innerHTML = `WARNING `;
         
        }
 

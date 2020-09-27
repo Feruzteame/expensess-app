@@ -4,6 +4,7 @@
 }
 body{
       background-color: #073f16;
+      background-color: white;
       width: 100%;
       height: auto;
       min-height: 100%;
@@ -68,6 +69,7 @@ h1{
 }
 article{
     display: flex;
+    
     background-color: rgba(0, 0, 0, 0.404);
     width: 80%;
     height: 60%;
@@ -75,12 +77,13 @@ article{
     padding: 10px;
     }
 #income{
-    width: 47%;
+  
+    width: 60%;
     margin-left: 2%;
     margin-right: 1px;
 }
 #outcome{
-    width: 47%;
+    width: 60%;
  
 }
 #display1,#display2{
@@ -91,29 +94,23 @@ article{
     margin-bottom:10px;
 }
 #result1, #result2{
+ 
     height: 20%;
     background-color: white;
-    
     padding-top: 10px;
     overflow: scroll;
-    margin-top:10px;
+    margin-top:30;
 }
 #button3{
+    margin-top: 15%;
     height: 40px;
     width: 100px;
-    background-color: rgb(90, 219, 90);
-    border: 2px solid rgba(0, 0, 0, 0.404);
 }
-#button4{
-    height: 40px;
-    width: 100px;
-    background-color: red;
-    border: 2px solid rgba(0, 0, 0, 0.404);
-}
+
 #button5{
     height: 40px;
     width: 70px;
-    margin-top: 10px;
+    margin-top: -10%;
     border: 2px solid rgba(0, 0, 0, 0.404);
     background-color: rgb(236, 236, 75)
 }
@@ -121,7 +118,7 @@ article{
 #remender{
     background-color: rgba(0, 0, 0, 0.404);
     width: 80%;
-    height: 25%;
+    height: 20%;
     text-align: center;
     padding: 10px;
     
@@ -198,6 +195,9 @@ footer{
             margin-right: 12%;
             margin-top: 15%;
         }
+    #button3{
+        display: none;
+    }
     
     
         

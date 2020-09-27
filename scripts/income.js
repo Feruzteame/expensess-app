@@ -1,5 +1,6 @@
 let array = [];
-function put(){
+
+ function put(){
    const input1 = document.getElementById("input");
    const input = document.getElementById("input").value;
    const display1 = document.getElementById("display1");
@@ -27,12 +28,3 @@ function put(){
    display1.innerHTML = value; 
    input1.value = " "
  }
-
- // function which used to add the array
-function  add(){
-     const result1 = document.getElementById("result1");
-     let sum = array.reduce(function(a, b){
-      return +a + +b;
-      }, 0);
-   result1.innerHTML = "Total income $" + sum;
-}
